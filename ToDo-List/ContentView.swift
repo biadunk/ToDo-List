@@ -36,9 +36,9 @@ struct ContentView: View {
           .background(Color.cyan)
           .clipShape(.capsule)
           .foregroundStyle(Color.white)
-//          .sheet(isPresented: $isPresenting) {
-//            AddNewTaskView(todoTask: $todoTask)
-//          }
+          .sheet(isPresented: $isPresenting) {
+            AddNewTaskView(todoTask: $todoTask)
+          }
         }
         .navigationTitle("ToDo List")
       }
